@@ -16,7 +16,7 @@ app.use('/posts', posts);
 const users = require('./server/routes/users');
 app.use('/users', users);
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 app.get('/admin', (req, res) => {
   res.sendFile(__dirname + '/login.html');
